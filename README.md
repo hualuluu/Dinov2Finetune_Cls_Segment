@@ -1,5 +1,5 @@
 # Dinov2FinetuneTest
-使用Dinov2学习的一些代码记录   
+使用Dinov2微调学习的一些代码记录   
 
 ## 代码使用环境： 
 1. git clone https://github.com/facebookresearch/dinov2.git   
