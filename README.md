@@ -33,20 +33,20 @@
       seg_data/   
       │   
       ├── train/   
-      │   ├── image1.jpg   
-      │   ├── image1.json (labelme标注的分割json格式)
-      │   ├── ...
-      │   
+      │   ├── image1.jpg     
+      │   ├── image1.json (labelme标注的分割json格式)   
+      │   ├── ...   
+      │      
       └── val/   
-      │   ├── image2.jpg   
-      │   ├── image2.json (labelme标注的分割json格式)
-      │   ├── ...
+      │   ├── image2.jpg    
+      │   ├── image2.json (labelme标注的分割json格式)   
+      │   ├── ...   
 
 
 ## 分类OnnxModel转换： 
 官方dinov2 的环境为torch2.0.0,转换过程中会报错，这是因为torch本身的bug，查询git后发现后面的torch版本已经修复了，所以更新一下环境参数
 
 ```shell   
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 xformers --index-url https://download.pytorch.org/whl/cu118
-pip install -e .[extras] --extra-index-url https://download.pytorch.org/whl/cu118 --extra-index-url https://pypi.nvidia.com
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 xformers --index-url https://download.pytorch.org/whl/cu118   
+pip install -e .[extras] --extra-index-url https://download.pytorch.org/whl/cu118 --extra-index-url https://pypi.nvidia.com   
 ```   
