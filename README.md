@@ -52,3 +52,8 @@ Exporting the operator 'aten::scaled_dot_product_attention' to ONNX opset versio
 pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 xformers --index-url https://download.pytorch.org/whl/cu118   
 pip install -e .[extras] --extra-index-url https://download.pytorch.org/whl/cu118 --extra-index-url https://pypi.nvidia.com   
 ```   
+
+C++ 文件夹中是对应的分类推理CPP,没有过多的封装，就是简单测试转换模型之后的模型结果是否正常。
+
+
+
