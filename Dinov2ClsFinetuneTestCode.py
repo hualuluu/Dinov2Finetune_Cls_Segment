@@ -10,7 +10,7 @@ test 4: 参考代码 - 仅训练分类头 cls 冻结backbone, 加载采用 本�
 
 getDinov2Vits14Model 中vit_model的构造方式修改了一下，不采用vits.__dict__定义
 因为vits.__dict__中指定了MemEffAttention结构，这个结构涉及到 xformers版本问题 导致 转onnx 有问题
-我自己的代码是由cuda要求的，所以采用基础的DinoVisionTransformer加载网络结构，指定的是Attention结构
+我自己的代码是有cuda11.8要求的，所以采用基础的DinoVisionTransformer加载网络结构，指定的是Attention结构
 """
 
 # 1. 导入并忽略所有警告（可选）
