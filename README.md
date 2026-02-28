@@ -53,7 +53,8 @@ pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 xformers --index-
 pip install -e .[extras] --extra-index-url https://download.pytorch.org/whl/cu118 --extra-index-url https://pypi.nvidia.com   
 ```   
 
-C++ 文件夹中是对应的分类推理CPP,没有过多的封装，就是简单测试转换模型之后的模型结果是否正常。
+C++ 文件夹中是对应的分类推理CPP,没有过多的封装，就是简单测试转换模型之后的模型结果是否正常。   
+我的运行环境是：Tensorrt 10.10 opencv 4.9.0 cuda 11.8
 
 
 
